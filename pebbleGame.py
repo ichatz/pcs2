@@ -1,7 +1,7 @@
 pebblePileA = 5
 pebblePileB = 4
 
-
+# add changes
 # This is the function the builds the matrix
 # TODO it would be better to also do a for loop for pile B
 def buildMatrix(sizeA):
