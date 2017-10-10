@@ -14,8 +14,6 @@ def buildMatrix(sizeA):
             print("take from B")
         elif (currentPileA % 2 == 1) and (testCaseB % 2 == 0):
             print("take from A")
-        elif (currentPileA + testCaseB % 2 == 0):
-            print("Surrender")
         else:
             print("take from both")
 
