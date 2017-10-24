@@ -1,7 +1,4 @@
-def swap(list, i, j):
-    temp = list[i]
-    list[i] = list[j]
-    list[j] = temp
+from selection import swap
 
 def bubbleSort(list):
     for j in range(0, len(list) - 1):
