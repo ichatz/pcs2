@@ -22,6 +22,8 @@ kmeans = KMeans(n_clusters=3, init='random')
 kmeans.fit([v[2:3] for v in rawdata])
 c = kmeans.predict([v[2:3] for v in rawdata])
 
+import matplotlib.pyplot as plt
+columnTitles = ["Sepal Length", "Sepal Width", "Petal Length", "Petal Width"]
 column = 2
 xmin = min([row[column] for row in rawdata])
 xmax = max([row[column] for row in rawdata])
@@ -36,4 +38,5 @@ plt.hist([rawdata[row][column] for row in range(0, len(rawdata)) if c[row] == 1]
 plt.subplot(313)
 plt.xlim(xmin, xmax)
 plt.hist([rawdata[row][column] for row in range(0, len(rawdata)) if c[row] == 2])
+plt.savefig("output.png")
 plt.show()
